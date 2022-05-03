@@ -45,17 +45,7 @@ export default siteConfig({
   // }
   pageUrlOverrides: null,
 
-  giscusGithubConfig: 
-  {
-    repo: 'enhenf/nextjs-notion-starter-kit',
-    repoId: 'R_kgDOHRebbg',
-    category: 'Announcements',
-    categoryId: 'DIC_kwDOHRebbs4CO6FM',
-    mapping: 'title',
-    reactionsEnabled: '1',
-    theme: 'light',
-    term: null,
-  },
+
 
   // whether to use the default notion navigation style or a custom one with links to
   // important pages
