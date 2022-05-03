@@ -20,3 +20,18 @@ module.exports = withBundleAnalyzer({
     contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;"
   }
 })
+
+<script src="https://giscus.app/client.js"
+        data-repo="enhenf/nextjs-notion-starter-kit"
+        data-repo-id="R_kgDOHRebbg"
+        data-category="Announcements"
+        data-category-id="DIC_kwDOHRebbs4CO6FM"
+        data-mapping="pathname"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="bottom"
+        data-theme="light"
+        data-lang="zh-CN"
+        crossorigin="anonymous"
+        async>
+</script>
