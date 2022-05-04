@@ -29,8 +29,8 @@ export default siteConfig({
 
 
   giscusGithubConfig: {
-    repo: 'fky2015/nexon',
-    repoId: 'MDEwOlJlcG9zaXRvcnkzNzkxNDQ0NTQ=',
+    repo: 'enhenf/notionComment',
+    repoId: 'R_kgDOHR2SvA',
     category: 'Comments',
     categoryId: 'DIC_kwDOFplJBs4COB_h',
     mapping: 'title',
