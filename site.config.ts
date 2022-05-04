@@ -27,6 +27,18 @@ export default siteConfig({
   defaultPageCover: null,
   defaultPageCoverPosition: 0.5,
 
+
+  giscusGithubConfig: {
+    repo: 'fky2015/nexon',
+    repoId: 'MDEwOlJlcG9zaXRvcnkzNzkxNDQ0NTQ=',
+    category: 'Comments',
+    categoryId: 'DIC_kwDOFplJBs4COB_h',
+    mapping: 'title',
+    reactionsEnabled: '1',
+    theme: 'light',
+    term: null,
+  },
+
   // whether or not to enable support for LQIP preview images (optional)
   isPreviewImageSupportEnabled: true,
 
