@@ -194,7 +194,7 @@ export const NotionPage: React.FC<types.PageProps> = ({
   const block = recordMap?.block?.[keys[0]]?.value
 
   const isRootPage =
-    block?.parent_id === '15f4d1ac16e343bb903dff0baf694995'
+    block?.id != '15f4d1ac16e343bb903dff0baf694995'
   const isBlogPost =
     block?.type === 'page' && block?.parent_table === 'collection'
 
