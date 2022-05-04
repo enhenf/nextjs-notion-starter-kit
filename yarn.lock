@@ -82,6 +82,9 @@
   resolved "https://registry.npmjs.org/@matejmazur/react-katex/-/react-katex-3.1.3.tgz"
   integrity sha512-rBp7mJ9An7ktNoU653BWOYdO4FoR4YNwofHZi+vaytX/nWbIlmHVIF+X8VFOn6c3WYmrLT5FFBjKqCZ1sjR5uQ==
 
+
+
+
 "@next/bundle-analyzer@^12.1.0":
   version "12.1.4"
   resolved "https://registry.npmjs.org/@next/bundle-analyzer/-/bundle-analyzer-12.1.4.tgz"
@@ -2386,6 +2389,12 @@ next-api-og-image@^2.2.1:
     patch-package "^6.4.7"
     puppeteer-core "^10.4.0"
     twemoji "^13.1.0"
+
+next-themes@0.2.0-beta.0:
+  version "0.2.0-beta.0"
+  resolved "https://registry.npmmirror.com/next-themes/-/next-themes-0.2.0-beta.0.tgz#4894b360116020dee9f89b8b8f01896f78caab11"
+  integrity sha512-vzF6V1cWo6LVuMZkTpsP3+7roc14X8VTRgyiZT/6TWzcd7sLdE+y/6F1WiXEvKg+IqwdUb8g3KwC20Fo1yUYqw==
+
 
 next@^12.1.1:
   version "12.1.3"
