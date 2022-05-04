@@ -31,8 +31,8 @@ export default siteConfig({
   giscusGithubConfig: {
     repo: 'enhenf/notionComment',
     repoId: 'R_kgDOHR2SvA',
-    category: 'Comments',
-    categoryId: 'DIC_kwDOFplJBs4COB_h',
+    category: 'General',
+    categoryId: 'DIC_kwDOHR2SvM4CO7KH',
     mapping: 'title',
     reactionsEnabled: '1',
     theme: 'light',
