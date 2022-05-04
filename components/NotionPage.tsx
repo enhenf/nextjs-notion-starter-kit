@@ -15,7 +15,7 @@ import TweetEmbed from 'react-tweet-embed'
 import { NotionRenderer } from 'react-notion-x'
 
 // utils
-import { getBlockTitle, getPageProperty, formatDate } from 'notion-utils'
+import { getBlockTitle, getPageProperty, formatDate, parsePageId } from 'notion-utils'
 import { mapPageUrl, getCanonicalPageUrl } from 'lib/map-page-url'
 import { mapImageUrl } from 'lib/map-image-url'
 import { searchNotion } from 'lib/search-notion'
@@ -193,10 +193,10 @@ export const NotionPage: React.FC<types.PageProps> = ({
   const keys = Object.keys(recordMap?.block || {})
   const block = recordMap?.block?.[keys[0]]?.value
 
-  // const isRootPage =
-  //   parsePageId(block?.id) === parsePageId(site?.rootNotionPageId)
   const notRootPage =
-    block?.id !== site?.rootNotionPageId
+    parsePageId(block?.id) !== parsePageId(site?.rootNotionPageId)
+  // const notRootPage =
+  //   block?.parent_table !== site?.rootNotionPageId
   const isBlogPost =
     block?.type === 'page' && block?.parent_table === 'collection'
 
