@@ -29,6 +29,12 @@
   resolved "https://registry.npmjs.org/@fisch0920/medium-zoom/-/medium-zoom-1.0.7.tgz"
   integrity sha512-hPUrgVM/QvsZdZzDTPyL1C1mOtEw03RqTLmK7ZlJ8S/64u4O4O5BvPvjB/9kyLtE6iVaS9UDRAMSwmM9uh2JIw==
 
+"@giscus/react@^1.1.2":
+  version "1.1.2"
+  resolved "https://registry.npmmirror.com/@giscus/react/-/react-1.1.2.tgz#c97f06aab1272c0fbe567c69ebffe3bad7206e7a"
+  integrity sha512-htSAAiTtoHTRE8GqSSkWmT+Iq7LJhtqSmr+HjEC1cXlNd1WeLVZXjnuiIj7+L8DOUnAdfh+1FClN304FVxIcsQ==
+
+
 "@fisch0920/use-dark-mode@^2.4.0":
   version "2.4.0"
   resolved "https://registry.yarnpkg.com/@fisch0920/use-dark-mode/-/use-dark-mode-2.4.0.tgz#92ba90c313a37099879a7b0405280933f9105cdc"

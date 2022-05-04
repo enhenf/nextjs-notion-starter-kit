@@ -6,6 +6,7 @@
  */
 
 import { parsePageId } from 'notion-utils'
+import { GiscusProps } from '@giscus/react'
 import posthog from 'posthog-js'
 import { getEnv, getSiteConfig } from './get-config-value'
 import { NavigationLink } from './site-config'
@@ -201,3 +202,22 @@ function invertPageUrlOverrides(
     }
   }, {})
 }
+
+
+class GiscusConfig {
+  props: GiscusProps
+
+  constructor(props: GiscusProps) {
+    this.props = props
+  }
+
+  valid() {
+    return !!this.props.repo && !!this.props.repoId && !!this.props.mapping
+  }
+  config() {
+    return this.props
+  }
+}
+
+export const giscusConfig = new GiscusConfig(getSiteConfig('giscusGithubConfig'))
+

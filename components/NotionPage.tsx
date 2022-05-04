@@ -6,6 +6,7 @@ import cs from 'classnames'
 import { useRouter } from 'next/router'
 import { useSearchParam } from 'react-use'
 import BodyClassName from 'react-body-classname'
+import { useTheme } from 'next-themes'
 import { PageBlock } from 'notion-types'
 
 import TweetEmbed from 'react-tweet-embed'
@@ -28,6 +29,7 @@ import { Page404 } from './Page404'
 import { PageHead } from './PageHead'
 import { PageAside } from './PageAside'
 import { Footer } from './Footer'
+const ReactGiscus = dynamic(() => import('./ReactGiscus'))
 import { NotionPageHeader } from './NotionPageHeader'
 import { GitHubShareButton } from './GitHubShareButton'
 
@@ -177,6 +179,7 @@ export const NotionPage: React.FC<types.PageProps> = ({
   // lite mode is for oembed
   const isLiteMode = lite === 'true'
 
+  const { resolvedTheme } = useTheme()
   const { isDarkMode } = useDarkMode()
 
   const siteMapPageUrl = React.useMemo(() => {
@@ -246,6 +249,17 @@ export const NotionPage: React.FC<types.PageProps> = ({
   const socialDescription =
     getPageProperty<string>('Description', block, recordMap) ||
     config.description
+
+  let comments: React.ReactNode = null
+
+  // only display comments and page actions on blog post pages
+  if (isBlogPost && config.giscusConfig.valid()) {
+    comments = (
+      <ReactGiscus darkMode={resolvedTheme === 'dark'} />
+    )
+  }
+
+
 
   return (
     <>

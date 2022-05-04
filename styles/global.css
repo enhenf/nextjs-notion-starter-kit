@@ -29,6 +29,14 @@ body {
   margin-inline-end: 0;
 }
 
+.giscus, .giscus-frame {
+  width: 100%;
+}
+.giscus-frame {
+  padding-right: 1px;
+}
+
+
 .static-tweet-emoji {
   height: 1.2em !important;
   width: 1.2em !important;
