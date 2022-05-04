@@ -31,6 +31,7 @@ export default siteConfig({
   giscusGithubConfig: {
     repo: 'enhenf/notionComment',
     repoId: 'R_kgDOHR2SvA',
+    // 上一次提交，更改了 category 相关参数，居然真的就好用了！
     category: 'General',
     categoryId: 'DIC_kwDOHR2SvM4CO7KH',
     mapping: 'title',

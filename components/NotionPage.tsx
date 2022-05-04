@@ -194,7 +194,7 @@ export const NotionPage: React.FC<types.PageProps> = ({
   const block = recordMap?.block?.[keys[0]]?.value
 
   const isRootPage =
-    block?.id === '15f4d1ac16e343bb903dff0baf694995'
+    block?.parent_id === '15f4d1ac16e343bb903dff0baf694995'
   const isBlogPost =
     block?.type === 'page' && block?.parent_table === 'collection'
 
@@ -254,7 +254,7 @@ export const NotionPage: React.FC<types.PageProps> = ({
 
   // only display comments and page actions on blog post pages
   // if (isBlogPost && config.giscusConfig.valid()) {
-  if (!isRootPage && config.giscusConfig.valid()) {
+  if (isRootPage && config.giscusConfig.valid()) {
     comments = (
       <ReactGiscus darkMode={resolvedTheme === 'dark'} />
     )
